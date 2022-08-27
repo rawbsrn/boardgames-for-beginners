@@ -1,6 +1,6 @@
 # Board Games for Beginers
 
-## _description goes here._
+## _A website for recommending new games to try out for people new to board games._
 
 ### By _**Rob Sameh**_
 
@@ -10,4 +10,5 @@
 
 * 1:20pm Started capstone-proposal.md
 * 1:55pm Finished draft of capstone-proposal.md
-* 3:00pm researched board games to reccomend
+* 3:00pm Researched board games to reccomend
+* 4:15pm Initial list of board games to reccomend generated
