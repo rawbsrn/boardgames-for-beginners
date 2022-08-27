@@ -10,3 +10,4 @@
 
 * 1:20pm Started capstone-proposal.md
 * 1:55pm Finished draft of capstone-proposal.md
+* 3:00pm researched board games to reccomend
