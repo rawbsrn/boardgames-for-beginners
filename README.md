@@ -1,0 +1,11 @@
+# Board Games for Beginers
+
+## _description goes here._
+
+### By _**Rob Sameh**_
+
+### Research & Planning Log
+
+#### Saturday, 08/27
+
+* 1:20pm Started capstone-proposal.md
