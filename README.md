@@ -2,11 +2,19 @@
 
 ## _A website for recommending new games to try out for people new to board games._
 
-### By _**Rob Sameh**_
+### By _Rob Sameh_
 
-### Why do this
+## Technologies Used
 
-There are no good resources that exist for people that are getting into boardgames as a hobby that want to get beyond staples such as Monopoly (which is a bad game) or Settlers of Catan. Resources exist for enfranchised gamers, such as BoardGameGeek [text](https://),  or how to play popular games on YouTube , which all can be helpful ways to learn about new games but can be difficult to navigate unless you know what you are looking for already. Top 10 lists from the New York Times are often targeted at people that are shopping for gamers but themselves may not have an interest in playing.
+- Javascript
+- Angular
+- Bootstrap
+- Node.js
+- Python
+
+## Description
+
+There are no good resources that exist for people that are getting into boardgames as a hobby that want to get beyond staples such as Monopoly (which is a bad game) or Settlers of Catan. Resources exist for enfranchised gamers, such as  [BoardGameGeek](https://boardgamegeek.com/), or how to play guides on popular games on YouTube, which all can be helpful ways to learn about new games but can be difficult to navigate unless you know what you are looking for already. Top 10 lists from the New York Times are often targeted at people that are shopping for gamers but themselves may not have an interest in playing.
 
 This website aims to fill the gap between all of these existing resources helping new board gamers find exemplary, easy to pick up and play games that can expose them to new mechanics and themes that they will continue to enjoy replaying within their gaming group. By having a curated list to reccomend from, we can help them have a better experience than if they picked something up off the shelf at their local gaming store or off of Board Game Geek's THE HOTNESS list.
 
@@ -14,14 +22,19 @@ The website asks simple identifying questions based on your past gaming experien
 
 ### Methodology for selecting reccomended games
 
-* To be written out
+- To be written out
+
+## Setup/Installation Requirements
+
+- TBD
 
 ### Research & Planning Log
 
 #### Saturday, 08/27
 
-* 1:20pm Started capstone-proposal.md
-* 1:55pm Finished draft of capstone-proposal.md
-* 3:00pm Researched board games to reccomend
-* 4:15pm Initial list of board games to reccomend generated
-* 4:40pm Added Why do this section to README
+- 1:20pm Started capstone-proposal.md
+- 1:55pm Finished draft of capstone-proposal.md
+- 3:00pm Researched board games to reccomend
+- 4:15pm Initial list of board games to reccomend generated
+- 4:40pm Added Why do this section to README
+- 7:45pm Built out README
