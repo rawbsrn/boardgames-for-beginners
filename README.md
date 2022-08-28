@@ -20,7 +20,7 @@ This website aims to fill the gap between all of these existing resources helpin
 
 The website asks simple identifying questions based on your past gaming experiences and other factors, such as number of players in your group, to guide you to which games will fit your gaming groups needs the best.
 
-### Methodology for selecting reccomended games
+### Methodology for selecting recommended games
 
 - To be written out
 
