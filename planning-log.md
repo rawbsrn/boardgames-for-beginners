@@ -17,3 +17,4 @@
 ## Sunday 9/11
 
 - 10:30am began planning out decision tree for reccomending games
+- 12:30am researching how board game geek categorizes games
