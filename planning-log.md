@@ -17,4 +17,5 @@
 ## Sunday 9/11
 
 - 10:30am began planning out decision tree for reccomending games
-- 12:30am researching how board game geek categorizes games
+- 12:30pm researching how board game geek categorizes games
+- 1-2:30pm lunch & interview prep
