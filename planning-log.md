@@ -12,4 +12,8 @@
 
 ## Saturday 9/10
 
-- 10:15pm Moved Planning log into seperate <!-- markdownlint-enable-file MD000 -->
+- 10:15pm Moved Planning log into seperate file
+
+## Sunday 9/11
+
+- 10:30am began planning out decision tree for reccomending games
