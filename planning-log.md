@@ -21,3 +21,4 @@
 - 1-2:30pm lunch & interview prep
 - 6:45-7:15pm watched Youtube videos on spec planning for apps
 - 8:15pm researched how to plan out how user will flow through the quiz and existing quiz options in react
+- 9:15pm taking a break for the evening, will come back to the drawing board in the am
