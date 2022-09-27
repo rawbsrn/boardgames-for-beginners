@@ -7,10 +7,12 @@
 ## Technologies Used
 
 - Javascript
-- Angular
-- Bootstrap
+- React
+- Redux
+- React Hook Form
 - Node.js
-- Python
+- Yarn
+- Python?
 
 ## Description
 

@@ -43,3 +43,7 @@
 ## Tuesday 9/27
 
 - 12:00 Removing sample files from Static Website
+- 12:45 Put in my own selection options
+- 2:00pm Working on results pages
+- 2:30pm Formatted results pages
+- 3:15pm planning out how to build results array
