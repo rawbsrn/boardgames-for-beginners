@@ -34,6 +34,8 @@
 ## Monday 9/26
 
 - 6:15pm Working on component diagram
-- 7:00pm watched video https://www.youtube.com/watch?v=evDxlqnsxXc
+- 7:00pm watched [video](https://www.youtube.com/watch?v=evDxlqnsxXc)
 - 8:00pm working through video tutorial
 - 9:30pm working on updating video tutorial
+- 10:00pm can navigate through the various pages, now working on updating state
+- 10:15pm State is successfully updating
