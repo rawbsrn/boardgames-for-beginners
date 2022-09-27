@@ -11,15 +11,15 @@ export const Step3 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {cheese}});
 
   const onSubmit = (data) => {
-    dispatch(chooseCheese(data.cheese));
-    Navigate.push("./step4");
+    // dispatch(chooseCheese(data.cheese));
+    Navigate("/step4");
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label htmlFor="cheese">Pick cheese:</label>
-        <select id="cheese" name="cheese" ref={register}>
+        <select id="cheese" {...register('cheese')}>
           <option value="no_cheese">No Cheese</option>
           <option value="mozarella">Mozarella</option>
           <option value="parmigiano">Parmigiano</option>

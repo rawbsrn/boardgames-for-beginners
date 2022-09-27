@@ -11,15 +11,15 @@ export const Step1 = () => {
   const { register, handleSubmit } = useForm({ defaultValues: { base } })
 
   const onSubmit = (data) => {
-    dispatch(chooseBase(data.base))
-    Navigate.push("./step2")
+    console.log(data);
+    Navigate("/step2");
   } 
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label htmlFor="base">Pick base:</label>
-        <select id="base" name="base" ref={register}>
+        <select id="base" {...register('base')}>
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="large">Large</option>
@@ -27,6 +27,6 @@ export const Step1 = () => {
       </div>
       <button>Next</button>
     </form>
-  )
+  );
 }
 

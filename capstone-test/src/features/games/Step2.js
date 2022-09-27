@@ -11,15 +11,15 @@ export const Step2 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {crust}});
 
   const onSubmit = (data) => {
-    dispatch(chooseCrust(data.crust));
-    Navigate.push("./step3");
+    // dispatch(chooseCrust(data.crust));
+    Navigate("/step3");
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label htmlFor="crust">Pick crust:</label>
-        <select id="crust" name="crust" ref={register}>
+        <select id="crust" {...register('crust')}>
           <option value="classic_thin">Classic Thin</option>
           <option value="deep_pan">Deep Pan</option>
           <option value="filled_crust">Filled Crust</option>
