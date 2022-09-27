@@ -11,7 +11,8 @@ export const Step4 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {sauce}});
 
   const onSubmit = (data) => {
-    // dispatch(chooseSauce(data.sauce));
+    console.log(data);
+    dispatch(chooseSauce(data.sauce));
     Navigate("/result");
   };
 

@@ -12,6 +12,7 @@ export const Step1 = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    dispatch(chooseBase(data.base))
     Navigate("/step2");
   } 
 

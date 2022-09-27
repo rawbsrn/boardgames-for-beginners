@@ -11,7 +11,8 @@ export const Step2 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {crust}});
 
   const onSubmit = (data) => {
-    // dispatch(chooseCrust(data.crust));
+    console.log(data);
+    dispatch(chooseCrust(data.crust));
     Navigate("/step3");
   };
 

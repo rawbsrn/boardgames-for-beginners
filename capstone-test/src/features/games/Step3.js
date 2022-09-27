@@ -11,7 +11,8 @@ export const Step3 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {cheese}});
 
   const onSubmit = (data) => {
-    // dispatch(chooseCheese(data.cheese));
+    console.log(data);
+    dispatch(chooseCheese(data.cheese));
     Navigate("/step4");
   };
 

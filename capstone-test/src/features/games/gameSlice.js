@@ -9,10 +9,10 @@ const gameSlice = createSlice({
   cheese: "none"
 },
 reducers: {
-  choosebase: (state, action) => {state.base = action.payload},
-  choosecrust: (state, action) => {state.crust = action.payload},
-  choosesauce: (state, action) => {state.sauce = action.payload},
-  choosecheese: (state, action) => {state.cheese = action.payload}  
+  chooseBase: (state, action) => {state.base = action.payload},
+  chooseCrust: (state, action) => {state.crust = action.payload},
+  chooseSauce: (state, action) => {state.sauce = action.payload},
+  chooseCheese: (state, action) => {state.cheese = action.payload}  
 }
 })
 
