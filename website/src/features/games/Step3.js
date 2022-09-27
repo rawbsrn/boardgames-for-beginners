@@ -2,28 +2,38 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { chooseCheese } from './gameSlice';
+import { chooseMechanics } from './gameSlice';
 
 export const Step3 = () => {
   const dispatch = useDispatch();
   const Navigate = useNavigate()
-  const cheese = useSelector(state => state.cheese)
-  const { register, handleSubmit } = useForm({defaultValues: {cheese}});
+  const mechanics = useSelector(state => state.mechanics)
+  const { register, handleSubmit } = useForm({defaultValues: {mechanics}});
 
   const onSubmit = (data) => {
     console.log(data);
-    dispatch(chooseCheese(data.cheese));
+    dispatch(chooseMechanics(data.mechanics));
     Navigate("/step4");
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label htmlFor="cheese">Pick cheese:</label>
-        <select id="cheese" {...register('cheese')}>
-          <option value="no_cheese">No Cheese</option>
-          <option value="mozarella">Mozarella</option>
-          <option value="parmigiano">Parmigiano</option>
+        <label htmlFor="mechanics">Pick mechanics:</label>
+        <select id="mechanics" {...register('mechanics')}>
+          <option value="Drafting">Drafting</option>
+          <option value="set_collection">Set Collection</option>
+          <option value="pattern_building">Pattern Building</option>
+          <option value="tile_placement">Tile Placement</option>
+          <option value="dice_rolling">Dice Rolling</option>
+          <option value="network_and_route_building">Network and Route Building</option>
+          <option value="race">Race</option>
+          <option value="trading">Trading</option>
+          <option value="cooperative">Cooperative</option>
+          <option value="deck_building">Deck Building</option>
+          <option value="contracts">Contracts</option>
+          <option value="auction_bidding">Auction Bidding</option>
+          <option value="worker_placement">Worker Placement</option>
         </select>
       </div>
       <button>Next</button>

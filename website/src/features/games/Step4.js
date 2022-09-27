@@ -2,28 +2,32 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { chooseSauce } from './gameSlice';
+import { choosePlayers } from './gameSlice';
 
 export const Step4 = () => {
   const dispatch = useDispatch();
   const Navigate = useNavigate()
-  const sauce = useSelector(state => state.sauce)
-  const { register, handleSubmit } = useForm({defaultValues: {sauce}});
+  const players = useSelector(state => state.players)
+  const { register, handleSubmit } = useForm({defaultValues: {players}});
 
   const onSubmit = (data) => {
     console.log(data);
-    dispatch(chooseSauce(data.sauce));
+    dispatch(choosePlayers(data.players));
     Navigate("/result");
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label htmlFor="sauce">Pick Sauce:</label>
-        <select id="sauce" {...register('sauce')}>
-          <option value="no_sauce">No Sauce</option>
-          <option value="tomato">Tomato</option>
-          <option value="spicy_tomato">Spicy Tomato</option>
+        <label htmlFor="players">How many Players:</label>
+        <select id="players" {...register('players')}>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
         </select>
       </div>
       <button>Complete</button>

@@ -2,28 +2,28 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import {useForm} from 'react-hook-form'
-import { chooseBase } from './gameSlice'
+import { chooseTime } from './gameSlice'
 
 export const Step1 = () => {
   const dispatch = useDispatch()
   const Navigate = useNavigate()
-  const base = useSelector(state => state.base)
-  const { register, handleSubmit } = useForm({ defaultValues: { base } })
+  const time = useSelector(state => state.time)
+  const { register, handleSubmit } = useForm({ defaultValues: { time } })
 
   const onSubmit = (data) => {
     console.log(data);
-    dispatch(chooseBase(data.base))
+    dispatch(chooseTime(data.time))
     Navigate("/step2");
   } 
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label htmlFor="base">Pick base:</label>
-        <select id="base" {...register('base')}>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
+        <label htmlFor="time">Pick time:</label>
+        <select id="time" {...register('time')}>
+          <option value="short">less than 30</option>
+          <option value="medium">30-60 minutes</option>
+          <option value="long">more than 60</option>
         </select>
       </div>
       <button>Next</button>

@@ -3,19 +3,19 @@ import {createSlice } from '@reduxjs/toolkit';
 const gameSlice = createSlice({
   name:"game",
   initialState: {
-  base: "small",
-  crust: "thin",
-  sauce: "none",
-  cheese: "none"
+  time: "short",
+  category: "none",
+  players: "1",
+  mechanics: "none"
 },
 reducers: {
-  chooseBase: (state, action) => {state.base = action.payload},
-  chooseCrust: (state, action) => {state.crust = action.payload},
-  chooseSauce: (state, action) => {state.sauce = action.payload},
-  chooseCheese: (state, action) => {state.cheese = action.payload}  
+  chooseTime: (state, action) => {state.time = action.payload},
+  chooseCategory: (state, action) => {state.category = action.payload},
+  choosePlayers: (state, action) => {state.players = action.payload},
+  chooseMechanics: (state, action) => {state.mechanics = action.payload}  
 }
 })
 
 export default gameSlice.reducer;
 
-export const {chooseBase, chooseCheese, chooseCrust, chooseSauce } = gameSlice.actions;
+export const {chooseTime, chooseMechanics, chooseCategory, choosePlayers } = gameSlice.actions;
