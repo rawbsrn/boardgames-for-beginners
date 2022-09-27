@@ -34,3 +34,4 @@
 ## Monday 9/26
 
 - 6:15pm Working on component diagram
+- 7:00pm watched video https://www.youtube.com/watch?v=evDxlqnsxXc
