@@ -26,3 +26,11 @@
 ## Sunday 9/25
 
 - 10:15am setup create react app and react-use-wizard
+- 10:30am - 6pm family emergency
+- 6:30pm incorperated basic use of react-use wizard into create react app
+- 8:00pm researching react-use-wizard examples
+- 9:30 researching how to incorporate redux into planned application
+
+## Monday 9/26
+
+- 6:15pm Working on component diagram
