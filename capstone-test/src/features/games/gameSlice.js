@@ -18,4 +18,4 @@ reducers: {
 
 export default gameSlice.reducer;
 
-export const {choosebase, choosecheese, choosecrust, choosesauce } = gameSlice.actions;
+export const {chooseBase, chooseCheese, chooseCrust, chooseSauce } = gameSlice.actions;

@@ -1,58 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import {Step1} from './features/games/Step1'
+import {Step2} from './features/games/Step2'
+import {Step3} from './features/games/Step3'
+import {Step4} from './features/games/Step4'
+import {Result} from './features/games/Result'
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Step1 />}/>
+      <Route path="/step2" element={<Step2 />}/>
+      <Route path="/step3" element={<Step3 />}/>
+      <Route path="/step4" element={<Step4 />}/>
+      <Route path="/result" element={<Result />}/>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
