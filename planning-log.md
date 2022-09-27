@@ -35,3 +35,5 @@
 
 - 6:15pm Working on component diagram
 - 7:00pm watched video https://www.youtube.com/watch?v=evDxlqnsxXc
+- 8:00pm working through video tutorial
+- 9:30pm working on updating video tutorial
