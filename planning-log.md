@@ -47,3 +47,12 @@
 - 2:00pm Working on results pages
 - 2:30pm Formatted results pages
 - 3:15pm planning out how to build results array
+- 7:00pm building out results table
+- 8:30pm learning about looping in react
+- 8:45pm got game names printing out
+
+## Wednesday 9/28
+
+-6:15pm building out playtime filter field
+-9:15pm still trying to filter the categories field
+
