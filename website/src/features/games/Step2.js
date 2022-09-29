@@ -21,7 +21,7 @@ export const Step2 = () => {
       <div>
         <label htmlFor="category">Pick category:</label>
         <select id="category" {...register('category')}>
-          <option value="card_fame">Card Game</option>
+          <option value="card_game">Card Game</option>
           <option value="economic">Economic</option>
           <option value="puzzle">Puzzle</option>
           <option value="territory_building">Territory Building</option>
