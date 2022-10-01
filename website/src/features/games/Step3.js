@@ -21,7 +21,7 @@ export const Step3 = () => {
       <div>
         <label htmlFor="mechanics">Pick mechanics:</label>
         <select id="mechanics" {...register('mechanics')}>
-          <option value="Drafting">Drafting</option>
+          <option value="drafting">Drafting</option>
           <option value="set_collection">Set Collection</option>
           <option value="pattern_building">Pattern Building</option>
           <option value="tile_placement">Tile Placement</option>
