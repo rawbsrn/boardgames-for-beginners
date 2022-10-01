@@ -27,9 +27,7 @@ export const Step3 = () => {
           <option value="tile_placement">Tile Placement</option>
           <option value="dice_rolling">Dice Rolling</option>
           <option value="network_and_route_building">Network and Route Building</option>
-          <option value="race">Race</option>
           <option value="trading">Trading</option>
-          <option value="cooperative">Cooperative</option>
           <option value="deck_building">Deck Building</option>
           <option value="contracts">Contracts</option>
           <option value="auction_bidding">Auction Bidding</option>

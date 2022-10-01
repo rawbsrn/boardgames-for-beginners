@@ -56,3 +56,8 @@
 -6:15pm building out playtime filter field
 -9:15pm still trying to filter the categories field
 -10:00 got categories working, will fully implement tomorrow
+
+## Friday 9/30
+
+-3:30 Changing around some mechanics and categories so that filtering works better
+-5:30 Updated categories for all games to match State Planning document

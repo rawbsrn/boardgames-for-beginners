@@ -24,8 +24,10 @@ export const Step2 = () => {
           <option value="card_game">Card Game</option>
           <option value="economic">Economic</option>
           <option value="puzzle">Puzzle</option>
+          <option value="cooperative">Cooperative</option>
           <option value="territory_building">Territory Building</option>
           <option value="dice">Dice</option>
+          <option value="race">Race</option>
         </select>
       </div>
       <button>Next</button>
