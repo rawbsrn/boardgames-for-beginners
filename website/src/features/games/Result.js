@@ -25,7 +25,7 @@ export const Result = () => {
     const getPossibilitiesContent = possibilities =>
     possibilities.games
       .filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.play_time === state.game.time && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics)))
-      .map((item)=> <li key={item.id}>{item.name}</li>);
+      .map((item)=> <li key={item.name}>{item.name}</li>);
 
   return (
     <>

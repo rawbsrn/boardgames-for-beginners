@@ -20,7 +20,7 @@ export const Step4 = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label htmlFor="players">How many Players:</label>
-        <select id="players" {...register('players')}>
+        <select id="players" defaultValue="4"{...register('players')}>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
