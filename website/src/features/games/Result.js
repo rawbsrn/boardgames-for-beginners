@@ -6,19 +6,19 @@ export const Result = () => {
   const state = useSelector(state => state)
   const possibilities = {
     'games': [
-    { id: 1, name: '7 Wonders', player_min: 3, player_max: 7, play_time: 'short', 'game_categories': [ {id: 1, "category": 'card_game'}, {id: 2, "category": 'economic'}], 'game_mechanics': [ {id: 1, category: 'drafting'}, {id: 2, category: 'set_collection'}]},
-    { id: 2, name: 'Azul', player_min: 2, player_max: 4, play_time: 'medium', 'game_categories': [ {id: 1, category: 'puzzle'}], 'game_mechanics': [ {id: 1, category: 'set_collection'},{id: 2, category: 'pattern_building'},{id: 3, category: 'tile_placement'} ]},
-    { id: 3, name: 'Carcassone', player_min: 2, player_max: 5, play_time: 'medium', 'game_categories': [ {id: 1, category: 'territory_building'}], 'game_mechanics': [ {id: 1, category: 'tile_placement'}]},
-    { id: 4, name: 'Catan', player_min: 3, player_max: 4, play_time: 'long', 'game_categories': [{id: 1, category: 'economic'}, {id: 2, category: 'race'}], 'game_mechanics': [ {id: 1, category: 'dice_rolling'}, {id: 2, category: 'network_and_route_building'}, {id: 2, category: 'trading'}]},
-    { id: 5, name: 'Kingdomino', player_min: 2, player_max: 4, play_time: 'short', 'game_categories': [ {id: 1, category: 'territory_building'}], 'game_mechanics': [ {id: 1, category: 'drafting'}, {id: 2, category: 'tile_placement'}]},
-    { id: 6, name: 'Pandemic', player_min: 1, player_max: 4, play_time: 'medium', 'game_categories': [ {id: 1, category: 'cooperative'}], 'game_mechanics': [ {id: 1, category: 'set_collection'}, {id: 2, category: 'trading'}]},
-    { id: 7, name: 'Quest for El dorado', player_min: 2, player_max: 4, play_time: 'medium', 'game_categories': [ {id: 1, category: 'race'}], 'game_mechanics': [ {id: 1, category: 'drafting'}, {id: 2, category: 'deck_building'}]},
-    { id: 8, name: 'Sagrada', player_min: 1, player_max: 4, play_time: 'medium', 'game_categories': [ {id: 1, category: 'dice'}, {id: 2, category: 'puzzle'}], 'game_mechanics': [ {id: 1, category: 'drafting'}, {id: 2, category: 'set_collection'}, {id: 3, category: 'pattern_building'}, {id: 4, category: 'dice_rolling'}, {id: 5, category: 'contracts'}]},
-    { id: 9, name: 'Skull', player_min: 3, player_max: 6, play_time: 'short', 'game_categories': [ {id: 1, category: 'card_game'}], 'game_mechanics': [ {id: 1, category: 'auction_bidding'}]},
-    { id: 10, name: 'Splendor', player_min: 2, player_max: 4, play_time: 'short', 'game_categories': [ {id: 1, category: 'card_game'}, {id: 2, category: 'economic'}, {id: 3, category: 'race'}], 'game_mechanics': [ {id: 1, category: 'drafting'}, {id: 1, category: 'drafting'}, {id: 2, category: 'set_collection'}, {id: 3, category: 'contracts'}]},
-    { id: 11, name: 'Stone Age', player_min: 2, player_max: 4, play_time: 'long', 'game_categories': [ {id: 1, category: 'dice'}, {id: 2, category: 'economic'}], 'game_mechanics': [ {id: 1, category: 'set_collection'}, {id: 2, category: 'dice_rolling'}, {id: 3, category: 'dice_rolling'}, {id: 4, category: 'contracts'}, {id: 5, category: 'worker_placement'}]},
-    { id: 12, name: 'Ticket to Ride', player_min: 2, player_max: 5, play_time: 'medium', 'game_categories': [ {id: 1, category: 'card_game'}], 'game_mechanics': [ {id: 1, category: 'contracts'}]},
-    { id: 13, name: 'Wing Span', player_min: 1, player_max: 4, play_time: 'medium', 'game_categories': [ {id: 1, category: 'card_game'}], 'game_mechanics': [ {id: 1, category: 'drafting'}, {id: 2, category: 'set_collection'}, {id: 3, category: 'dice_rolling'}]},
+    {name: '7 Wonders', player_min: 3, player_max: 7, play_time: 'short', 'game_categories': [ {"category": 'card_game'}, {"category": 'economic'}], 'game_mechanics': [ {category: 'drafting'}, {category: 'set_collection'}]},
+    {name: 'Azul', player_min: 2, player_max: 4, play_time: 'medium', 'game_categories': [ {category: 'puzzle'}], 'game_mechanics': [ {category: 'set_collection'},{category: 'pattern_building'},{category: 'tile_placement'} ]},
+    {name: 'Carcassone', player_min: 2, player_max: 5, play_time: 'medium', 'game_categories': [ {category: 'territory_building'}], 'game_mechanics': [ {category: 'tile_placement'}]},
+    {name: 'Catan', player_min: 3, player_max: 4, play_time: 'long', 'game_categories': [{category: 'economic'}, {category: 'race'}], 'game_mechanics': [ {category: 'dice_rolling'}, {category: 'network_and_route_building'}, {category: 'trading'}]},
+    {name: 'Kingdomino', player_min: 2, player_max: 4, play_time: 'short', 'game_categories': [ {category: 'territory_building'}], 'game_mechanics': [ {category: 'drafting'}, {category: 'tile_placement'}]},
+    {name: 'Pandemic', player_min: 1, player_max: 4, play_time: 'medium', 'game_categories': [ {category: 'cooperative'}], 'game_mechanics': [ {category: 'set_collection'}, {category: 'trading'}]},
+    {name: 'Quest for El dorado', player_min: 2, player_max: 4, play_time: 'medium', 'game_categories': [ {category: 'race'}], 'game_mechanics': [ {category: 'drafting'}, {category: 'deck_building'}]},
+    {name: 'Sagrada', player_min: 1, player_max: 4, play_time: 'medium', 'game_categories': [ {category: 'dice'}, {category: 'puzzle'}], 'game_mechanics': [ {category: 'drafting'}, {category: 'set_collection'}, {category: 'pattern_building'}, {category: 'dice_rolling'}, {category: 'contracts'}]},
+    {name: 'Skull', player_min: 3, player_max: 6, play_time: 'short', 'game_categories': [ {category: 'card_game'}], 'game_mechanics': [ {category: 'auction_bidding'}]},
+    {name: 'Splendor', player_min: 2, player_max: 4, play_time: 'short', 'game_categories': [ {category: 'card_game'}, {category: 'economic'}, {category: 'race'}], 'game_mechanics': [ {category: 'drafting'}, {category: 'drafting'}, {category: 'set_collection'}, {category: 'contracts'}]},
+    {name: 'Stone Age', player_min: 2, player_max: 4, play_time: 'long', 'game_categories': [ {category: 'dice'}, {category: 'economic'}], 'game_mechanics': [ {category: 'set_collection'}, {category: 'dice_rolling'}, {category: 'dice_rolling'}, {category: 'contracts'}, {category: 'worker_placement'}]},
+    {name: 'Ticket to Ride', player_min: 2, player_max: 5, play_time: 'medium', 'game_categories': [ {category: 'card_game'}], 'game_mechanics': [ {category: 'contracts'}]},
+    {name: 'Wing Span', player_min: 1, player_max: 4, play_time: 'medium', 'game_categories': [ {category: 'card_game'}], 'game_mechanics': [ {category: 'drafting'}, {category: 'set_collection'}, {category: 'dice_rolling'}]},
   ]
 };
 

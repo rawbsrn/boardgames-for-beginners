@@ -57,8 +57,14 @@
 -9:15pm still trying to filter the categories field
 -10:00pm got categories working, will fully implement tomorrow
 
-## Friday 9/30
+# Friday 9/30
 
 -3:30pm Changing around some mechanics and categories so that filtering works better
 -5:30pm Updated categories for all games to match State Planning document
 -6:00pm mechanics added
+
+# Sunday 10/2
+
+-9:00am refactoring certain parts of application
+-11:45am getting rid of id fields
+-1:15pm wrote ( ?id: \d+),( ) regex to get rid of id string
