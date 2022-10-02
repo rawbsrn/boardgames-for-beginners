@@ -24,13 +24,16 @@ export const Result = () => {
 
     const getPossibilitiesContent = possibilities =>
     possibilities.games
-      .filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.play_time === state.game.time && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics)))
-      .map((item)=> <li key={item.name}>{item.name}</li>);
+      .filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.play_time === state.game.time && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics)));
 
   return (
     <>
-      <pre>With {JSON.stringify(state.game.players, null, 2)} players over a {JSON.stringify(state.game.time, null, 2)} play time, a category of {JSON.stringify(state.game.category, null, 2)} and with {JSON.stringify(state.game.mechanics, null, 2)}, I recommend: {<ul>{getPossibilitiesContent(possibilities)}</ul>}
-
+      <pre>With {JSON.stringify(state.game.players, null, 2)} players over a {JSON.stringify(state.game.time, null, 2)} play time, a category of {JSON.stringify(state.game.category, null, 2)} and with {JSON.stringify(state.game.mechanics, null, 2)}, I recommend:
+      {getPossibilitiesContent(possibilities).length > 0 &&
+      <ul>{getPossibilitiesContent(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>
+      }
+      {getPossibilitiesContent(possibilities).length === 0 &&
+      <p>No games found with these parameters! You can start over if you like or adjust your settings below:</p>}
       </pre>
       <Link to="/">Start over</Link>
     </>
