@@ -11,7 +11,6 @@ export const Step3 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {mechanics}});
 
   const onSubmit = (data) => {
-    console.log(data);
     dispatch(chooseMechanics(data.mechanics));
     Navigate("/step4");
   };

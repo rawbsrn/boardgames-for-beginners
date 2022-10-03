@@ -69,3 +69,4 @@
 -11:45am getting rid of id fields
 -1:15pm wrote ( ?id: \d+),( ) regex to get rid of id string
 -1:50pm adjusted verbage for finishing out selection
+-5:00pm trying to get loose search working

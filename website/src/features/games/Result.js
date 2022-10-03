@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-
 export const Result = () => {
   const state = useSelector(state => state)
   const possibilities = {
@@ -22,9 +21,46 @@ export const Result = () => {
   ]
 };
 
+
+
     const getPossibilitiesContent = possibilities =>
     possibilities.games
       .filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.play_time === state.game.time && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics)));
+
+      // const loose_game_finding =  useSelector(state => state.game.no_game_found)
+
+      const handleClickTime = () => {
+        console.log('Switch to Mechanics constraints');
+      };
+
+      function ClickTime(possibilities) {
+        return (possibilities.games.filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics))).map((item)=> <li key={item.name}>{item.name}</li>));
+      }
+
+      function handleClickMechanics (state) {
+        console.log('Switch to Mechanics constraints');
+        return {
+          ...state,
+          no_game_found: "one"
+        }
+      };
+
+      const handleClickCategories = () => {
+        console.log(state.game.no_game_found);
+      };
+
+      function renderSwitch(param) {
+        switch(param) {
+  
+          case "one":   return ClickTime(possibilities);
+          // case "two":   return <ComponentB />;
+          // case "three": return <ComponentC />;
+          // case "four":  return <ComponentD />;
+  
+          default:      return <p>No project match</p>
+        }
+      };
+  
 
   return (
     <>
@@ -33,7 +69,18 @@ export const Result = () => {
       <ul>{getPossibilitiesContent(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>
       }
       {getPossibilitiesContent(possibilities).length === 0 &&
-      <p>No games found with these parameters! You can start over if you like or adjust your settings below:</p>}
+      <pre>No games found with these parameters! Click to see suggestions with no:
+      <button onClick={handleClickTime}>
+        Time constraints
+      </button>
+      <button onClick={handleClickMechanics}>
+      Mechanics constraints
+      </button>
+      <button onClick={handleClickCategories}>
+        Category constraints
+      </button>
+      {renderSwitch(state.game.no_game_found)}
+      </pre>}
       </pre>
       <Link to="/">Start over</Link>
     </>

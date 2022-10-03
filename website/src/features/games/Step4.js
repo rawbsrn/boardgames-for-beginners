@@ -11,7 +11,6 @@ export const Step4 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {players}});
 
   const onSubmit = (data) => {
-    console.log(data);
     dispatch(choosePlayers(data.players));
     Navigate("/result");
   };

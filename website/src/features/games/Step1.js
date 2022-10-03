@@ -11,7 +11,6 @@ export const Step1 = () => {
   const { register, handleSubmit } = useForm({ defaultValues: { time } })
 
   const onSubmit = (data) => {
-    console.log(data);
     dispatch(chooseTime(data.time))
     Navigate("/step2");
   } 

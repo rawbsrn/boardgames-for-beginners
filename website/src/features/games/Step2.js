@@ -11,7 +11,6 @@ export const Step2 = () => {
   const { register, handleSubmit } = useForm({defaultValues: {category}});
 
   const onSubmit = (data) => {
-    console.log(data);
     dispatch(chooseCategory(data.category));
     Navigate("/step3");
   };

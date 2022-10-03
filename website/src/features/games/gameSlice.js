@@ -1,12 +1,13 @@
 import {createSlice } from '@reduxjs/toolkit';
 
 const gameSlice = createSlice({
-  name:"game",
+  name: "game",
   initialState: {
   time: "short",
   category: "none",
   players: "1",
-  mechanics: "none"
+  mechanics: "none",
+  noGameFound: "none"
 },
 reducers: {
   chooseTime: (state, action) => {state.time = action.payload},
@@ -18,4 +19,4 @@ reducers: {
 
 export default gameSlice.reducer;
 
-export const {chooseTime, chooseMechanics, chooseCategory, choosePlayers } = gameSlice.actions;
+export const {chooseTime, chooseMechanics, chooseCategory, choosePlayers, chooseNoGameFound } = gameSlice.actions;
