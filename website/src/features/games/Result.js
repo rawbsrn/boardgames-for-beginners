@@ -63,7 +63,7 @@ export const Result = () => {
       }
       {getPossibilitiesContent(possibilities).length === 0 &&
       <pre>No games found with these parameters! Click to see suggestions with no:
-      <button onClick={() => dispatch(chooseNoGameFound(1))}>
+      <button onClick={() => dispatch(chooseNoGameFound("taco"))}>
         Time constraints
       </button>
       <button onClick={handleClickMechanics}>

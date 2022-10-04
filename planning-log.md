@@ -70,3 +70,7 @@
 -1:15pm wrote ( ?id: \d+),( ) regex to get rid of id string
 -1:50pm adjusted verbage for finishing out selection
 -5:00pm trying to get loose search working
+
+# Monday 10/3
+
+-6:45pm Making progress on implementing loose searching
