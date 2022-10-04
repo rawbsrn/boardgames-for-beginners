@@ -23,8 +23,6 @@ export const Result = () => {
   ]
 };
 
-
-
     const getPossibilitiesContent = possibilities =>
     possibilities.games
       .filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.play_time === state.game.time && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics)));
@@ -43,8 +41,6 @@ export const Result = () => {
       }
 
 
-
-
   return (
     <>
       <pre>With {JSON.stringify(state.game.players, null, 2)} players over a {JSON.stringify(state.game.time, null, 2)} play time, a category of {JSON.stringify(state.game.category, null, 2)} and with {JSON.stringify(state.game.mechanics, null, 2)}, I recommend:
@@ -56,7 +52,6 @@ export const Result = () => {
       <button onClick={() => dispatch(chooseNoGameFound("time"))}>
         Time constraints
       </button>
-
       <button onClick={() => dispatch(chooseNoGameFound("mechanics"))}>
       Mechanics constraints
       </button>
@@ -64,12 +59,14 @@ export const Result = () => {
         Category constraints
       </button>
       {state.game.noGameFound === "none" && <p>press a button!</p>}
-      {state.game.noGameFound === "time" && <ul>{ClickTime(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
-      {state.game.noGameFound === "mechanics" && <ul>{ClickMechanics(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
-      {state.game.noGameFound === "category" && <ul>{ClickCategories(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      {state.game.noGameFound === "time" && ClickTime(possibilities).length > 0 && <ul>{ClickTime(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      {state.game.noGameFound === "time" && ClickTime(possibilities).length === 0 && <p>can't find a game with no time constraints that still fits, sorry </p>}
+      {state.game.noGameFound === "mechanics" && ClickMechanics(possibilities).length > 0 && <ul>{ClickMechanics(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      {state.game.noGameFound === "mechanics" && ClickMechanics(possibilities).length === 0 && <p>can't find a game with no mechanics constraints that still fits, sorry </p>}
+      {state.game.noGameFound === "category" && ClickCategories(possibilities).length > 0 && <ul>{ClickCategories(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      {state.game.noGameFound === "category" && ClickCategories(possibilities).length === 0 && <p>can't find a game with no category constraints that still fits, sorry </p>}
       </pre>
       }
-
       </pre>
       <Link to="/">Start over</Link>
     </>
