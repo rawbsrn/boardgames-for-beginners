@@ -31,29 +31,14 @@ export const Result = () => {
 
 
       function ClickTime(possibilities) {
-        return (possibilities.games.filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics))).map((item)=> <li key={item.name}>{item.name}</li>));
+        return (possibilities.games.filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics))));
       }
-
-      function handleClickMechanics (state) {
-        console.log('Switch to Mechanics constraints');
-      };
 
       const handleClickCategories = () => {
         console.log(state.game.noGameFound);
       };
 
-      // function renderSwitch(param) {
-      //   switch(param) {
-  
-      //     case "one":   return ClickTime(possibilities);
-      //     // case "two":   return <ComponentB />;
-      //     // case "three": return <ComponentC />;
-      //     // case "four":  return <ComponentD />;
-  
-      //     default:      return <p>No project match</p>
-      //   }
-      // };
-  
+
 
   return (
     <>
@@ -63,19 +48,20 @@ export const Result = () => {
       }
       {getPossibilitiesContent(possibilities).length === 0 &&
       <pre>No games found with these parameters! Click to see suggestions with no:
-      <button onClick={() => dispatch(chooseNoGameFound("taco"))}>
+      <button onClick={() => dispatch(chooseNoGameFound("time"))}>
         Time constraints
       </button>
-      <button onClick={handleClickMechanics}>
+
+      <button onClick={() => dispatch(chooseNoGameFound("none"))}>
       Mechanics constraints
       </button>
       <button onClick={handleClickCategories}>
         Category constraints
       </button>
-      </pre>}
-      {state.game.no_game_found === 1 &&
-      <ul>{ClickTime(possibilities)}</ul>
+      {state.game.noGameFound === "time" && <ul>{ClickTime(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      </pre>
       }
+
       </pre>
       <Link to="/">Start over</Link>
     </>

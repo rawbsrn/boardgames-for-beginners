@@ -74,3 +74,4 @@
 # Monday 10/3
 
 -6:45pm Making progress on implementing loose searching
+-7:35pm loose search proof of concept working
