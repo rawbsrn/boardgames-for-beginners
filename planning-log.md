@@ -75,3 +75,4 @@
 
 -6:45pm Making progress on implementing loose searching
 -7:35pm loose search proof of concept working
+-7:45pm basic loose searching implemented

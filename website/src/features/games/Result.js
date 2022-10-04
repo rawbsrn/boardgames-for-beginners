@@ -34,9 +34,14 @@ export const Result = () => {
         return (possibilities.games.filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.game_categories.find(y => y.category.includes(state.game.category)) && item.game_mechanics.find(y => y.category.includes(state.game.mechanics))));
       }
 
-      const handleClickCategories = () => {
-        console.log(state.game.noGameFound);
-      };
+      function ClickMechanics(possibilities) {
+        return (possibilities.games.filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.play_time === state.game.time && item.game_categories.find(y => y.category.includes(state.game.category))));
+      }
+
+      function ClickCategories(possibilities) {
+        return (possibilities.games.filter(item => item.player_min <= state.game.players && item.player_max >= state.game.players && item.game_mechanics.find(y => y.category.includes(state.game.mechanics))));
+      }
+
 
 
 
@@ -52,13 +57,16 @@ export const Result = () => {
         Time constraints
       </button>
 
-      <button onClick={() => dispatch(chooseNoGameFound("none"))}>
+      <button onClick={() => dispatch(chooseNoGameFound("mechanics"))}>
       Mechanics constraints
       </button>
-      <button onClick={handleClickCategories}>
+      <button onClick={() => dispatch(chooseNoGameFound("category"))}>
         Category constraints
       </button>
+      {state.game.noGameFound === "none" && <p>press a button!</p>}
       {state.game.noGameFound === "time" && <ul>{ClickTime(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      {state.game.noGameFound === "mechanics" && <ul>{ClickMechanics(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
+      {state.game.noGameFound === "category" && <ul>{ClickCategories(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>}
       </pre>
       }
 
