@@ -18,6 +18,9 @@ export const Step1 = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
+
+        <h1>Step 1: How much time do you want to play?</h1>
+        
         <label htmlFor="time">Pick time:</label>
         <select id="time" {...register('time')}>
           <option value="short">less than 30</option>
@@ -25,6 +28,7 @@ export const Step1 = () => {
           <option value="long">more than 60</option>
         </select>
       </div>
+      <br></br>
       <button>Next</button>
     </form>
   );

@@ -43,12 +43,17 @@ export const Result = () => {
 
   return (
     <>
+    <h1>Results: </h1>
+    <br></br>
       <pre>With {JSON.stringify(state.game.players, null, 2)} players over a {JSON.stringify(state.game.time, null, 2)} play time, a category of {JSON.stringify(state.game.category, null, 2)} and with {JSON.stringify(state.game.mechanics, null, 2)}, I recommend:
+      <br></br>
       {getPossibilitiesContent(possibilities).length > 0 &&
       <ul>{getPossibilitiesContent(possibilities).map((item)=> <li key={item.name}>{item.name}</li>)}</ul>
       }
       {getPossibilitiesContent(possibilities).length === 0 &&
       <pre>No games found with these parameters! Click to see suggestions with no:
+        <br></br>
+        <br></br>
       <button onClick={() => dispatch(chooseNoGameFound("time"))}>
         Time constraints
       </button>
@@ -68,7 +73,7 @@ export const Result = () => {
       </pre>
       }
       </pre>
-      <Link to="/">Start over</Link>
+      <Link to="/step1">Start over</Link>
     </>
   )
 }

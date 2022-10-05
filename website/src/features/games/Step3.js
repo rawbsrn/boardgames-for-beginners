@@ -18,6 +18,9 @@ export const Step3 = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
+
+      <h1>Step 3: What mechanics do you want to play with?</h1>
+
         <label htmlFor="mechanics">Pick mechanics:</label>
         <select id="mechanics" {...register('mechanics')}>
           <option value="drafting">Drafting</option>
@@ -33,6 +36,7 @@ export const Step3 = () => {
           <option value="worker_placement">Worker Placement</option>
         </select>
       </div>
+      <br></br>
       <button>Next</button>
     </form>
   );

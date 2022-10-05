@@ -18,6 +18,9 @@ export const Step2 = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
+        
+      <h1>Step 2: What category of game do you want to play?</h1>
+
         <label htmlFor="category">Pick category:</label>
         <select id="category" {...register('category')}>
           <option value="card_game">Card Game</option>
@@ -29,6 +32,7 @@ export const Step2 = () => {
           <option value="race">Race</option>
         </select>
       </div>
+      <br></br>
       <button>Next</button>
     </form>
   );

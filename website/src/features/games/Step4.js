@@ -18,6 +18,9 @@ export const Step4 = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
+
+      <h1>Step 4: How many players do you have?</h1>
+
         <label htmlFor="players">How many Players:</label>
         <select id="players" defaultValue="4"{...register('players')}>
           <option value="1">1</option>
@@ -29,6 +32,7 @@ export const Step4 = () => {
           <option value="7">7</option>
         </select>
       </div>
+      <br></br>
       <button>Complete</button>
     </form>
   );
