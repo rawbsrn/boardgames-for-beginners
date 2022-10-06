@@ -83,3 +83,7 @@
 -6:45pm cleaned up project repository and README
 -7:30pm added custom favicon
 -8:15pm added headers and started landing page
+
+# Wednesday 10/5
+
+-7:15pm working on presentation
