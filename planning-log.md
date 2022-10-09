@@ -97,3 +97,5 @@
 
 -9:00am initial submission
 -11:00am added details to pages explaining mechanics and categories, tested presentation
+-11:30am added links to boardgamegeek for each game
+-11:45am added button to show all games for play group

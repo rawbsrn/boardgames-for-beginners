@@ -19,7 +19,7 @@ export const Step1 = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
 
-        <h1>Step 1: How much time do you want to play?</h1>
+        <h1>Step 1: How much time do you want to play for?</h1>
         
         <label htmlFor="time">Pick time:</label>
         <select id="time" {...register('time')}>
