@@ -23,9 +23,9 @@ export const Step1 = () => {
         
         <label htmlFor="time">Pick time:</label>
         <select id="time" {...register('time')}>
-          <option value="short">less than 30</option>
+          <option value="short">less than 30 minutes</option>
           <option value="medium">30-60 minutes</option>
-          <option value="long">more than 60</option>
+          <option value="long">more than 60 minutes </option>
         </select>
       </div>
       <br></br>

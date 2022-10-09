@@ -33,6 +33,7 @@ export const Step2 = () => {
         </select>
       </div>
       <br></br>
+      <p>Categories are a means with which to group games based on like subjects or similar characteristics - <a href="https://boardgamegeek.com/wiki/page/Category"target="_blank" rel="noopener noreferrer">boardgamegeek.com</a>.</p>
       <button>Next</button>
     </form>
   );

@@ -37,6 +37,8 @@ export const Step3 = () => {
         </select>
       </div>
       <br></br>
+      <p>A game mechanic refers to a specific element or type of game play. A mechanic could be specific like “card drafting” or broad like the fact that a game uses cards or dice. In war games like Risk or Axis & Allies, a game mechanic might be how two people resolve who wins a battle … dice rolling in this case. If you love the game Carcassonne, you might be interested in other games that involve “tile placement” - <a href="https://boardgaming.com/mechanics"target="_blank" rel="noopener noreferrer">boardgaming.com</a>.</p>
+
       <button>Next</button>
     </form>
   );

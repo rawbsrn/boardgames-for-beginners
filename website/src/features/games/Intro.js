@@ -13,6 +13,9 @@ export const Intro = () => {
       <h1>
         Welcome to Board Games for Beginners
       </h1>
+      <p>
+      The goal of this project is to help new board gamers find easy to pick up and play games that can expose them to new mechanics and themes that they will continue to enjoy replaying with their friends.
+      </p>
       <br></br>
         <button onClick={onSubmit}>
         Get Started!

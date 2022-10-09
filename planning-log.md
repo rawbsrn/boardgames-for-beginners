@@ -92,3 +92,8 @@
 # Saturday 10/8
 
 -7:45pm worked on the Demo
+
+# Sunday 10/9
+
+-9:00am initial submission
+-11:00am added details to pages explaining mechanics and categories, tested presentation
