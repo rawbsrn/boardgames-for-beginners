@@ -11,7 +11,7 @@ export const Intro = () => {
   return (
     <div>
       <h1>
-        Placeholder text here
+        Welcome to Board Games for Beginners
       </h1>
       <br></br>
         <button onClick={onSubmit}>

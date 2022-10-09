@@ -88,3 +88,7 @@
 
 -7:15pm working on presentation
 -9:45pm finished working on presentation for the evening
+
+# Saturday 10/8
+
+-7:45pm worked on the Demo
